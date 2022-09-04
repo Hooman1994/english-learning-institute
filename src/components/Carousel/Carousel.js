@@ -2,8 +2,8 @@ import { Carousel } from "antd";
 import React from "react";
 import "antd/dist/antd.css";
 import "antd/dist/antd.less";
-import styles from "../components/Carousel.module.scss";
-import {carouselData} from "../utility/data";
+import styles from "../../components/Carousel/Carousel.module.scss";
+import {carouselData} from "../../utility/data";
 
 function CarouselComponent() {
   return (

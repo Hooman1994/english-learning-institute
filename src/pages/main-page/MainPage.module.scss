@@ -1,6 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
+  .carousel{
+    justify-content: center;
+  }
   .content {
     display: flex;
     flex-direction: row;

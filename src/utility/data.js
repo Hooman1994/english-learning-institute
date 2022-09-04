@@ -1,10 +1,10 @@
-import image1 from "../assets/1.jpg";
-import image2 from "../assets/2.jpg";
-import image3 from "../assets/3.jpg";
-import english1 from "../assets/english1.webp";
-import english2 from "../assets/english2.png";
-import english3 from "../assets/english3.png";
-import english4 from "../assets/english4.png";
+import image1 from "../assets/images/1.jpg";
+import image2 from "../assets/images/2.jpg";
+import image3 from "../assets/images/3.jpg";
+import english1 from "../assets/images/english1.webp";
+import english2 from "../assets/images/english2.png";
+import english3 from "../assets/images/english3.png";
+import english4 from "../assets/images/english4.png";
 
 const carouselData = [
   {
@@ -30,7 +30,7 @@ const carouselData = [
 const cardData = [
   {
     id: "1",
-    bodyOne: "123",
+    bodyOne: "از ابتدایی ترین سطح",
     bodyTwo: "test test 123",
     image: english1,
     name: "1",
@@ -58,30 +58,6 @@ const cardData = [
     bodyTwo: "test test 000",
     image: english4,
     name: "4",
-    alt: "english4",
-  },
-  {
-    id: "5",
-    bodyOne: "000",
-    bodyTwo: "test test 000",
-    image: english4,
-    name: "5",
-    alt: "english4",
-  },
-  {
-    id: "6",
-    bodyOne: "000",
-    bodyTwo: "test test 000",
-    image: english4,
-    name: "6",
-    alt: "english4",
-  },
-  {
-    id: "7",
-    bodyOne: "000",
-    bodyTwo: "test test 000",
-    image: english4,
-    name: "7",
     alt: "english4",
   },
 ];
