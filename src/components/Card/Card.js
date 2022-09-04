@@ -8,14 +8,28 @@ import { CardActionArea } from "@mui/material";
 export default function CardComponent(props) {
   return (
     <div key={props.id}>
-      <Card style={{ width: "300px", height: "400px" }}>
+      <Card style={{ width: "300px", height: "400px" , borderRadius: "10px"}}>
         <CardActionArea>
-          <CardMedia component="img" image={props.image} alt={props.alt} style={{ width: "300px", height: "200px" }}/>
+          <CardMedia
+            component="img"
+            image={props.image}
+            alt={props.alt}
+            style={{ padding: "10px", width: "300px", height: "200px" }}
+          />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div" style={{ width: "300px"}}>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              style={{ direction: "rtl", marginRight: "10px" }}
+            >
               {props.bodyOne}
             </Typography>
-            <Typography variant="body2" color="text.secondary" style={{ width: "300px", height: "400px" }}>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              style={{ direction: "rtl", height: "400px" }}
+            >
               {props.bodyTwo}
             </Typography>
           </CardContent>

@@ -15,6 +15,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import Image from "../../assets/images/main-logo.webp"
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -159,7 +161,7 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static">
         <Toolbar>
           <IconButton>
-            <img src='src/assets/main-logo.webp'/>
+          <img src={Image} style={{width: "100px" , height: "100px"}}></img>
           </IconButton>
           <Typography
             variant="h6"
