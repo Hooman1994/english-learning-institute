@@ -62,4 +62,49 @@ const cardData = [
   },
 ];
 
-export { cardData, carouselData };
+const menuItems = [
+  {
+    id: "3",
+    title: "تماس با ما",
+    subMenu: [
+      {
+        id: "31",
+        title: "راه های ارتباطی",
+      },
+      {
+        id: "32",
+        title: "انتقادات  پیشنهادات",
+      },
+    ],
+  },
+  {
+    id: "2",
+    title: "درباره ما",
+    subMenu: [
+      {
+        id: "21",
+        title: "عناوین  و جوایز",
+      },
+      {
+        id: "22",
+        title: "آلبوم",
+      },
+    ],
+  },
+  {
+    id: "1",
+    title: "ثبت نام",
+    subMenu: [
+      {
+        id: "11",
+        title: "دوره ها",
+      },
+      {
+        id: "12",
+        title: "کلاس ها",
+      },
+    ],
+  },
+];
+
+export { cardData, carouselData, menuItems };
