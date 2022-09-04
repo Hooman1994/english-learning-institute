@@ -98,8 +98,8 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}>پروفایل</MenuItem>
+      <MenuItem onClick={handleMenuClose}>اطلاعات کاربری</MenuItem>
     </Menu>
   );
 
@@ -183,7 +183,7 @@ export default function PrimarySearchAppBar() {
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
-        
+
           <Box sx={{ flexGrow: 1 }} />
           {menuItems.length &&
             menuItems.map((item, index) => {
@@ -228,7 +228,7 @@ export default function PrimarySearchAppBar() {
               <AccountCircle />
             </IconButton>
           </Box>
-         
+
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
