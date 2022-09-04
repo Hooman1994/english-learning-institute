@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin: 120px 70px 20px 70px;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+  }
+}
