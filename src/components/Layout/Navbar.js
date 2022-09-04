@@ -166,7 +166,7 @@ export default function PrimarySearchAppBar() {
       >
         <Toolbar>
           <IconButton>
-            <img src={Image} style={{ width: "100px", height: "100px" }}></img>
+            <img src={Image} style={{ width: "100px", height: "100px" }} alt="Logo"></img>
           </IconButton>
           <Typography
             variant="h6"
