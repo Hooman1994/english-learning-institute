@@ -6,7 +6,7 @@ import Footer from "../src/components/Layout/Footer";
 
 function App() {
   return (
-    <div style={{ zoom: "90%" }}>
+    <div>
       <Navbar />
       <MainPage />
       <Footer />

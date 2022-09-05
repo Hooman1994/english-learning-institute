@@ -166,7 +166,11 @@ export default function PrimarySearchAppBar() {
       >
         <Toolbar>
           <IconButton>
-            <img src={Image} style={{ width: "100px", height: "100px" }} alt="Logo"></img>
+            <img
+              src={Image}
+              style={{ width: "100px", height: "100px" }}
+              alt="Logo"
+            ></img>
           </IconButton>
           <Typography
             variant="h6"
@@ -174,15 +178,6 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           ></Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
 
           <Box sx={{ flexGrow: 1 }} />
           {menuItems.length &&

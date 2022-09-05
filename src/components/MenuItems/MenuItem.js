@@ -17,7 +17,12 @@ export default function FadeMenu(props) {
   return (
     <div>
       <Button
-        style={{color: "white" , fontSize: "20px"}}
+        style={{
+          color: "white",
+          fontSize: "24px",
+          marginRight: "20px",
+          fontWeight: "bold",
+        }}
         id="fade-button"
         aria-controls={open ? "fade-menu" : undefined}
         aria-haspopup="true"
@@ -36,7 +41,7 @@ export default function FadeMenu(props) {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        {props.subMenu.length &&
+        {props.subMenu &&
           props.subMenu.map((item, index) => {
             return (
               <div key={item.id}>

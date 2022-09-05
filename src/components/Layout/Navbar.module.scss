@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: fit-content;
+  background-color: #0d059d;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .logo {
+      img {
+        height: 100px;
+        width: 100px;
+        cursor: pointer;
+        margin: 10px 30px 10px 30px;
+      }
+    }
+  }
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      color: gray;
+    }
+    .subMenu {
+      width: 200px;
+      height: 200px;
+      background-color: antiquewhite;
+    }
+  }
+}

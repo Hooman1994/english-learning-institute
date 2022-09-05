@@ -1,5 +1,7 @@
 import cover1 from "../assets/images/cover1.png";
-import cover2 from "../assets/images/cover2.png";
+import cover2 from "../assets/images/cover2.webp";
+import cover3 from "../assets/images/cover3.png";
+import cover4 from "../assets/images/cover4.png";
 import fee from "../assets/images/fee.png";
 import account from "../assets/images/account.png";
 import calendar from "../assets/images/calendar.png";
@@ -25,12 +27,18 @@ const carouselData = [
     name: "2",
     alt: "cover2",
   },
-  // {
-  //   id: "3",
-  //   imageSource: image3,
-  //   name: "3",
-  //   alt: "image 3",
-  // },
+  {
+    id: "3",
+    imageSource: cover3,
+    name: "3",
+    alt: "cover3",
+  },
+  {
+    id: "4",
+    imageSource: cover4,
+    name: "3",
+    alt: "cover4",
+  },
 ];
 
 const cardData = [
@@ -103,44 +111,86 @@ const cardData = [
 
 const menuItems = [
   {
+    id: "4",
+    title: "درباره ما",
+    subMenu: [
+      {
+        id: "41",
+        title: "ارتباط با شعبه ها",
+      },
+      {
+        id: "42",
+        title: "همکاری با ما",
+      },
+      {
+        id: "43",
+        title: "تماس با پشتیبانی",
+      },
+    ],
+  },
+  {
     id: "3",
-    title: "تماس با ما",
+    title: "درباره ما",
     subMenu: [
       {
         id: "31",
-        title: "راه های ارتباطی",
+        title: "درباره موسسه",
       },
       {
         id: "32",
-        title: "انتقادات  پیشنهادات",
+        title: "قوانین و مقررات",
+      },
+      {
+        id: "33",
+        title: "سوالات متداول",
       },
     ],
   },
   {
     id: "2",
-    title: "درباره ما",
+    title: "آموزش آیلتس",
     subMenu: [
       {
         id: "21",
-        title: "عناوین  و جوایز",
+        title: "دوره های آیلتس",
       },
       {
         id: "22",
-        title: "آلبوم",
+        title: "خدمات تضمین قبولی آزمون",
+      },
+      {
+        id: "23",
+        title: "امتحانات ماک آیلتس",
+      },
+      {
+        id: "24",
+        title: "کارگاه تک مهارتی",
       },
     ],
   },
   {
     id: "1",
-    title: "ثبت نام",
+    title: "دوره های عمومی",
     subMenu: [
       {
         id: "11",
-        title: "دوره ها",
+        title: "دوره های آنلاین",
       },
       {
         id: "12",
-        title: "کلاس ها",
+        title: "دوره های کودکان",
+      },
+      {
+        id: "13",
+        title: "دوره های نوجوانان",
+      },
+      {
+        id: "14",
+        title: "دوره های بزرگسالان",
+      },
+      {
+        id: "15",
+        title: "دوره های مکالمه متمرکز",
       },
     ],
   },
