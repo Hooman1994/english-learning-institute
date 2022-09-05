@@ -62,9 +62,9 @@ export default function Forms(props) {
                   variant="filled"
                 />
               </div>
-              {/* <Button variant="contained" size="large">
+              <Button variant="contained" size="large">
                 {props.buttonTitle}
-              </Button> */}
+              </Button>
               <IconButton aria-label={props.buttonTitle} color="secondary">
                 <Fingerprint />
               </IconButton>
