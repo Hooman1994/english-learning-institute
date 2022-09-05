@@ -184,6 +184,7 @@ export default function PrimarySearchAppBar() {
               fontSize: "20px",
               fontWeight: "bold",
             }}
+            formType="Register"
           />
           <Form
             buttonTitle="ورود"
@@ -194,6 +195,8 @@ export default function PrimarySearchAppBar() {
               fontSize: "20px",
               fontWeight: "bold",
             }}
+            formType="Login"
+
           />
           <Typography
             variant="h6"
