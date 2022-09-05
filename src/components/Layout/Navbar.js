@@ -17,6 +17,8 @@ import MoreIcon from "@mui/icons-material/MoreVert";
 import Image from "../../assets/images/main-logo.webp";
 import FadeMenu from "../MenuItems/MenuItem";
 import { menuItems } from "../../utility/data";
+import { Button } from "@mui/material";
+import Form from "../Form/Form";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -172,6 +174,27 @@ export default function PrimarySearchAppBar() {
               alt="Logo"
             ></img>
           </IconButton>
+          <Form
+            buttonTitle="ثبت نام"
+            variant="outlined"
+            size="large"
+            style={{
+              marginRight: "10px",
+              backgroundColor: "white",
+              fontSize: "20px",
+              fontWeight: "bold",
+            }}
+          />
+          <Form
+            buttonTitle="ورود"
+            variant="contained"
+            size="large"
+            style={{
+              marginRight: "10px",
+              fontSize: "20px",
+              fontWeight: "bold",
+            }}
+          />
           <Typography
             variant="h6"
             noWrap
