@@ -37,7 +37,7 @@ export default function ComplexCard(props) {
     <Card
       sx={{
         maxHeight: "900px",
-        maxWidth: 345,
+        maxWidth: 400,
         margin: "50px",
         textAlign: "right",
         boxShadow:
@@ -45,18 +45,18 @@ export default function ComplexCard(props) {
       }}
     >
       <CardHeader
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title={props.title}
+        subheader={props.date}
       />
       <CardMedia
         component="img"
         height="194"
-        image="/static/images/cards/paella.jpg"
-        alt="Paella dish"
+        image={props.image}
+        alt={props.alt}
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          {props.body2}
+          {props.body}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
