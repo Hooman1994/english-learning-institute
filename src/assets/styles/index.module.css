@@ -2,10 +2,11 @@
   font-family: "IRANSans";
   src: url("../fonts/IRANSans.eot") format("eot"),
     url("../fonts/IRANSans.woff") format("woff"),
-    url("../fonts/IRANSans.woff") format("truetype");
+    url("../fonts/IRANSans.woff2") format("woff2"),
+    url("../fonts/iransans.ttf") format("truetype");
 }
 
 body {
-  font-family: "IRANSans";
+  font-family: "IRANSans" !important;
   background-image: url("../images/wallpaper.jpg");
 }

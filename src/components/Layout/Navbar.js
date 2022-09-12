@@ -5,11 +5,9 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
@@ -17,7 +15,6 @@ import MoreIcon from "@mui/icons-material/MoreVert";
 import Image from "../../assets/images/main-logo.webp";
 import FadeMenu from "../MenuItems/MenuItem";
 import { menuItems } from "../../utility/data";
-import { Button } from "@mui/material";
 import Form from "../Form/Form";
 
 const Search = styled("div")(({ theme }) => ({
@@ -33,29 +30,6 @@ const Search = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(3),
     width: "auto",
-  },
-}));
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
   },
 }));
 
@@ -100,8 +74,28 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>پروفایل</MenuItem>
-      <MenuItem onClick={handleMenuClose}>اطلاعات کاربری</MenuItem>
+      <MenuItem
+        onClick={handleMenuClose}
+        style={{
+          direction: "rtl",
+          marginRight: "10px",
+          fontFamily: "IRANsans",
+          fontSize: "18px",
+        }}
+      >
+        پروفایل
+      </MenuItem>
+      <MenuItem
+        onClick={handleMenuClose}
+        style={{
+          direction: "rtl",
+          marginRight: "10px",
+          fontFamily: "IRANsans",
+          fontSize: "18px",
+        }}
+      >
+        اطلاعات کاربری
+      </MenuItem>
     </Menu>
   );
 
@@ -170,7 +164,11 @@ export default function PrimarySearchAppBar() {
           <IconButton>
             <img
               src={Image}
-              style={{ width: "100px", height: "100px" }}
+              style={{
+                width: "100px",
+                height: "100px",
+                fontFamily: "IRANsans",
+              }}
               alt="Logo"
             ></img>
           </IconButton>
@@ -181,8 +179,9 @@ export default function PrimarySearchAppBar() {
             style={{
               marginRight: "10px",
               backgroundColor: "white",
-              fontSize: "20px",
+              fontSize: "18px",
               fontWeight: "bold",
+              fontFamily: "IRANsans",
             }}
             formType="Register"
           />
@@ -192,17 +191,20 @@ export default function PrimarySearchAppBar() {
             size="large"
             style={{
               marginRight: "10px",
-              fontSize: "20px",
+              fontSize: "18px",
               fontWeight: "bold",
+              fontFamily: "IRANsans",
             }}
             formType="Login"
-
           />
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
+            sx={{
+              display: { xs: "none", sm: "block" },
+              fontFamily: "IRANsans",
+            }}
           ></Typography>
 
           <Box sx={{ flexGrow: 1 }} />

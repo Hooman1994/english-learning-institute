@@ -19,9 +19,10 @@ export default function FadeMenu(props) {
       <Button
         style={{
           color: "white",
-          fontSize: "24px",
+          fontSize: "22px",
           marginRight: "20px",
           fontWeight: "bold",
+          fontFamily: "IRANsans",
         }}
         id="fade-button"
         aria-controls={open ? "fade-menu" : undefined}
@@ -45,7 +46,18 @@ export default function FadeMenu(props) {
           props.subMenu.map((item, index) => {
             return (
               <div key={item.id}>
-                <MenuItem onClick={handleClose}>{item.title}</MenuItem>
+                <MenuItem
+                  style={{
+                    direction: "rtl",
+                    color: "black",
+                    fontSize: "20px",
+                    marginRight: "20px",
+                    fontFamily: "IRANsans",
+                  }}
+                  onClick={handleClose}
+                >
+                  {item.title}
+                </MenuItem>
               </div>
             );
           })}

@@ -1,0 +1,17 @@
+.footerContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  direction: rtl;
+  font-size: 20px;
+  .socialNetwork {
+    justify-content: center;
+    display: flex;
+    a {
+      margin: 20px;
+    }
+  }
+}
