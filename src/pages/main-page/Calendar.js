@@ -35,66 +35,66 @@ function createData(day, time1, time2, time3, time4, time5, time6) {
 const rows = [
   createData(
     "شنبه",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1"
+    "16:15 - 17:45 Class A1",
+    "18:00 - 19:30 Class A2",
+    "18:00 - 19:30 Class A3",
+    "19:45 - 21:15 Class A4",
+    "19:30 - 21:00 Class A5",
+    "19:45 - 21:15 Class A6"
   ),
   createData(
     "یکشنبه",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1"
+    "16:15 - 17:45 Class B1",
+    "18:00 - 19:30 Class B2",
+    "18:00 - 19:30 Class B3",
+    "19:45 - 21:15 Class B4",
+    "19:30 - 21:00 Class B5",
+    "19:45 - 21:15 Class B6"
   ),
   createData(
     "دوشنبه",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1"
+    "16:15 - 17:45 Class A1",
+    "18:00 - 19:30 Class A2",
+    "18:00 - 19:30 Class A3",
+    "19:45 - 21:15 Class A4",
+    "19:30 - 21:00 Class A5",
+    "19:45 - 21:15 Class A6"
   ),
   createData(
     "سه شنبه",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1"
+    "16:15 - 17:45 Class B1",
+    "18:00 - 19:30 Class B2",
+    "18:00 - 19:30 Class B3",
+    "19:45 - 21:15 Class B4",
+    "19:30 - 21:00 Class B5",
+    "19:45 - 21:15 Class B6"
   ),
   createData(
     "چهارشنبه",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1"
+    "16:15 - 17:45 Class A1",
+    "18:00 - 19:30 Class A2",
+    "18:00 - 19:30 Class A3",
+    "19:45 - 21:15 Class A4",
+    "19:30 - 21:00 Class A5",
+    "19:45 - 21:15 Class A6"
   ),
   createData(
     "پنجشنبه",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1"
+    "16:15 - 17:45 Class B1",
+    "18:00 - 19:30 Class B2",
+    "18:00 - 19:30 Class B3",
+    "19:45 - 21:15 Class B4",
+    "19:30 - 21:00 Class B5",
+    "19:45 - 21:15 Class B6"
   ),
   createData(
     "جمعه",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1",
-    "17:15 - 19 Class A1"
+    "--------------",
+    "--------------",
+    "--------------",
+    "--------------",
+    "10:30 - 13 Class A5",
+    "11:00 - 14:30 Class A6"
   ),
 ];
 
