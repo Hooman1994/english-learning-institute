@@ -1,6 +1,8 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import LoadingButton from "@mui/lab/LoadingButton";
+import SaveIcon from "@mui/icons-material/Save";
 import Modal from "@mui/material/Modal";
 import TextField from "@mui/material/TextField";
 import { IconButton } from "@mui/material";
@@ -27,9 +29,21 @@ const style = {
 };
 
 export default function Forms(props) {
+  const [loading, setLoading] = React.useState(false);
+  function handleClickLogin() {
+    setLoading(true);
+    alert("ورود با موفقیت انجام شد.");
+  }
+  function handleClickRegister() {
+    setLoading(true);
+    alert("ثبت نام با موفقیت انجام گردید.");
+  }
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    setOpen(false);
+    setLoading(false);
+  };
 
   return (
     <div>
@@ -76,9 +90,10 @@ export default function Forms(props) {
                   variant="filled"
                 />
               </div>
-              <Button
+              {/* <Button
                 variant="contained"
                 size="large"
+                onClick={handleClose}
                 style={{
                   color: "white",
                   fontSize: "18px",
@@ -87,7 +102,22 @@ export default function Forms(props) {
                 }}
               >
                 {props.buttonTitle}
-              </Button>
+              </Button> */}
+              <LoadingButton
+                style={{
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "IRANsans",
+                }}
+                color="secondary"
+                onClick={handleClickLogin}
+                loading={loading}
+                loadingPosition="start"
+                startIcon={<SaveIcon />}
+                variant="contained"
+              >
+                {props.buttonTitle}
+              </LoadingButton>
               <IconButton aria-label={props.buttonTitle} color="secondary">
                 <Fingerprint />
               </IconButton>
@@ -178,17 +208,21 @@ export default function Forms(props) {
                   variant="filled"
                 />
               </div>
-              <Button
-                variant="contained"
-                size="large"
+              <LoadingButton
                 style={{
                   color: "white",
                   fontSize: "18px",
                   fontFamily: "IRANsans",
                 }}
+                color="success"
+                onClick={handleClickLogin}
+                loading={loading}
+                loadingPosition="start"
+                startIcon={<SaveIcon />}
+                variant="contained"
               >
                 {props.buttonTitle}
-              </Button>
+              </LoadingButton>
               <IconButton aria-label="fingerprint" color="success">
                 <Fingerprint />
               </IconButton>
