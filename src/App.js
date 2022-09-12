@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import MainPage from "../src/pages/main-page/MainPage";
-import LevelTest from "./pages/main-page/OnlineServices";
+import LevelTest from "./pages/main-page/LevelTest";
 import Fee from "./pages/main-page/Fee";
 import Introduction from "./pages/main-page/Introduction";
 import Online from "./pages/main-page/Online";
@@ -22,8 +22,8 @@ function App() {
         <Route path="/introduction" element={<Introduction />} />
         <Route path="/online" element={<Online />} />
         <Route path="/calendar" element={<Calendar />} />
-        <Route path="/levelTest" element={<LevelTest />} />
-        <Route path="/onlineServices" element={<OnlineServices />} />
+        <Route path="/level-test" element={<LevelTest />} />
+        <Route path="/online-services" element={<OnlineServices />} />
         <Route path="/store" element={<Store />} />
         <Route path="/ttc" element={<TTC />} />
       </Routes>

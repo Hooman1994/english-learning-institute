@@ -1,10 +1,13 @@
 import React from "react";
+import Container from "@mui/material/Container";
 
 function Fee() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <Container style={{backgroundColor: "red"}} maxWidth="xl">
+      <div>
+        <h1>Hello</h1>
+      </div>
+    </Container>
   );
 }
 

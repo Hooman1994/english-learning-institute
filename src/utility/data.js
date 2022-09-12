@@ -85,7 +85,7 @@ const cardData = [
     image: levelTest,
     name: "5",
     alt: "levelTest",
-    url: "/levelTest",
+    url: "/level-test",
   },
   {
     id: "6",
@@ -95,7 +95,7 @@ const cardData = [
     image: onlineServices,
     name: "6",
     alt: "onlineServices",
-    url: "/onlineServices",
+    url: "/online-services",
   },
   {
     id: "7",
@@ -204,4 +204,62 @@ const menuItems = [
   },
 ];
 
-export { cardData, carouselData, menuItems };
+const books = [
+  {
+    id: "1",
+    bodyOne: "شهریه کلاس ها و دوره ها",
+    bodyTwo: "اطلاع از نحوه پرداخت و جدول پرداخت شهریه زبان آموزان",
+    image: fee,
+    name: "1",
+    alt: "fee",
+    url: "/fee",
+  },
+  {
+    id: "2",
+    bodyOne: "واحد های آموزشگاه",
+    bodyTwo: "آشنایی با واحد های آموزشی، کادر مجرب ما و مدیریت کلاس ها",
+    image: introduction,
+    name: "2",
+    alt: "introduction",
+    url: "/introduction",
+  },
+  {
+    id: "3",
+    bodyOne: "دوره های آموزشی",
+    bodyTwo: "آشنایی با ادوار اموزشی و کلاس ها و متد های آموزشی آموزشگاه",
+    image: online,
+    name: "3",
+    alt: "online",
+    url: "/online",
+  },
+  {
+    id: "4",
+    bodyOne: "تقویم آموزشی",
+    bodyTwo: "مشاهده تقویم برگزاری کلاس ها و دوره ها",
+    image: calendar,
+    name: "4",
+    alt: "calendar",
+    url: "/calendar",
+  },
+  {
+    id: "5",
+    bodyOne: "تعیین سطح",
+    bodyTwo: "برگزاری آزمون تعیین سطح با پیشرفته ترین متد ها",
+    image: levelTest,
+    name: "5",
+    alt: "levelTest",
+    url: "/level-test",
+  },
+  {
+    id: "6",
+    bodyOne: "خدمات آنلاین",
+    bodyTwo:
+      "آشنایی با خدمات آنلایناعم از کلاس های غیر حضوری، دوره های نیمه آفلاین و پشتیبانی زبان آموزان",
+    image: onlineServices,
+    name: "6",
+    alt: "onlineServices",
+    url: "/online-services",
+  },
+];
+
+export { cardData, carouselData, menuItems, books };
