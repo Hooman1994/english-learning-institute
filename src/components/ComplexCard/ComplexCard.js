@@ -26,7 +26,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function ComplexCard() {
+export default function ComplexCard(props) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -39,6 +39,7 @@ export default function ComplexCard() {
         maxHeight: "900px",
         maxWidth: 345,
         margin: "50px",
+        textAlign: "right",
         boxShadow:
           "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
       }}
@@ -55,16 +56,14 @@ export default function ComplexCard() {
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the
-          mussels, if you like.
+          {props.body2}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
-        <IconButton aria-label="share">{/* add to trolly */}</IconButton>
+        <IconButton aria-label="buy">{/* add to trolly */}</IconButton>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
@@ -76,15 +75,9 @@ export default function ComplexCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
-          <Typography paragraph>
-            Heat 1/2 cup of the broth in a pot until simmering, add saffron and
-            set aside for 10 minutes.
-          </Typography>
-          <Typography>
-            Set aside off of the heat to let rest for 10 minutes, and then
-            serve.
-          </Typography>
+          <Typography paragraph>:توضیحات</Typography>
+          <Typography paragraph>{props.paragraph1}</Typography>
+          <Typography>{props.paragraph2}</Typography>
         </CardContent>
       </Collapse>
     </Card>
