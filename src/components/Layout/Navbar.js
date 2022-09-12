@@ -16,6 +16,7 @@ import Image from "../../assets/images/main-logo.webp";
 import FadeMenu from "../MenuItems/MenuItem";
 import { menuItems } from "../../utility/data";
 import Form from "../Form/Form";
+import { useNavigate } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -34,6 +35,7 @@ const Search = styled("div")(({ theme }) => ({
 }));
 
 export default function PrimarySearchAppBar() {
+  let navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -164,12 +166,15 @@ export default function PrimarySearchAppBar() {
           <IconButton>
             <img
               src={Image}
+              alt="Logo"
               style={{
                 width: "100px",
                 height: "100px",
                 fontFamily: "IRANsans",
               }}
-              alt="Logo"
+              onClick={() => {
+                navigate("/");
+              }}
             ></img>
           </IconButton>
           <Form

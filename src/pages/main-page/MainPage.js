@@ -20,6 +20,7 @@ function ManiPage() {
                   alt={item.alt}
                   bodyOne={item.bodyOne}
                   bodyTwo={item.bodyTwo}
+                  url={item.url}
                 />
               </div>
             );

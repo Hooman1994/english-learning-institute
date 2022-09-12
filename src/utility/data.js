@@ -49,6 +49,7 @@ const cardData = [
     image: fee,
     name: "1",
     alt: "fee",
+    url: "/fee",
   },
   {
     id: "2",
@@ -57,6 +58,7 @@ const cardData = [
     image: introduction,
     name: "2",
     alt: "introduction",
+    url: "/introduction",
   },
   {
     id: "3",
@@ -65,6 +67,7 @@ const cardData = [
     image: online,
     name: "3",
     alt: "online",
+    url: "/online",
   },
   {
     id: "4",
@@ -73,6 +76,7 @@ const cardData = [
     image: calendar,
     name: "4",
     alt: "calendar",
+    url: "/calendar",
   },
   {
     id: "5",
@@ -81,6 +85,7 @@ const cardData = [
     image: levelTest,
     name: "5",
     alt: "levelTest",
+    url: "/levelTest",
   },
   {
     id: "6",
@@ -90,6 +95,7 @@ const cardData = [
     image: onlineServices,
     name: "6",
     alt: "onlineServices",
+    url: "/onlineServices",
   },
   {
     id: "7",
@@ -98,6 +104,7 @@ const cardData = [
     image: store,
     name: "7",
     alt: "store",
+    url: "/store",
   },
   {
     id: "8",
@@ -106,6 +113,7 @@ const cardData = [
     image: ttc,
     name: "8",
     alt: "ttc",
+    url: "/ttc",
   },
 ];
 
