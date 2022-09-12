@@ -5,6 +5,12 @@ import Modal from "@mui/material/Modal";
 import TextField from "@mui/material/TextField";
 import { IconButton } from "@mui/material";
 import { Fingerprint } from "@mui/icons-material";
+import styles from "../Form/Form.module.scss";
+import FacebookSVG from "../../assets/images/facebook.svg";
+import YouTubeSVG from "../../assets/images/youtube.svg";
+import LinkedinSVG from "../../assets/images/linkedin.svg";
+import TwitterSVG from "../../assets/images/twitter.svg";
+import InstagramSVG from "../../assets/images/instagram.svg";
 
 const style = {
   position: "absolute",
@@ -12,7 +18,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 600,
-  height: 600,
+  height: 800,
   borderRadius: "10px",
   bgcolor: "background.paper",
   border: "2px solid #000",
@@ -48,6 +54,14 @@ export default function Forms(props) {
               <div style={{ margin: "30px", fontSize: "30px" }}>
                 <TextField
                   id="filled-search"
+                  label="Username"
+                  type="text"
+                  variant="filled"
+                />
+              </div>
+              <div style={{ margin: "30px", fontSize: "30px" }}>
+                <TextField
+                  id="filled-search"
                   label="Email"
                   type="email"
                   variant="filled"
@@ -62,12 +76,56 @@ export default function Forms(props) {
                   variant="filled"
                 />
               </div>
-              <Button variant="contained" size="large">
+              <Button
+                variant="contained"
+                size="large"
+                style={{
+                  color: "white",
+                  fontSize: "18px",
+                  marginRight: "20px",
+                  fontFamily: "IRANsans",
+                }}
+              >
                 {props.buttonTitle}
               </Button>
               <IconButton aria-label={props.buttonTitle} color="secondary">
                 <Fingerprint />
               </IconButton>
+            </div>
+            <div className={styles.footerContainer}>
+              ما را در شبکه های اجتماعی دنبال کنید
+              <div className={styles.socialNetwork}>
+                <a href="https://www.instagram.com/">
+                  <img
+                    alt="Instagram"
+                    src={InstagramSVG}
+                    width="50"
+                    height="50"
+                  />
+                </a>
+                <a href="https://twitter.com/">
+                  <img alt="Twitter" src={TwitterSVG} width="50" height="50" />
+                </a>
+                <a href="https://www.YouTube.com/">
+                  <img alt="YouTube" src={YouTubeSVG} width="50" height="50" />
+                </a>
+                <a href="https://www.Facebook.com/">
+                  <img
+                    alt="Facebook"
+                    src={FacebookSVG}
+                    width="50"
+                    height="50"
+                  />
+                </a>
+                <a href="https://www.Linkedin.com/">
+                  <img
+                    alt="Linkedin"
+                    src={LinkedinSVG}
+                    width="50"
+                    height="50"
+                  />
+                </a>
+              </div>
             </div>
           </Box>
         </Modal>
@@ -86,6 +144,14 @@ export default function Forms(props) {
               }}
             >
               <h1>فرم ثبت نام</h1>
+              <div style={{ margin: "30px", fontSize: "30px" }}>
+                <TextField
+                  id="filled-search"
+                  label="Username"
+                  type="text"
+                  variant="filled"
+                />
+              </div>
               <div style={{ margin: "30px", fontSize: "30px" }}>
                 <TextField
                   id="filled-search"
@@ -112,12 +178,55 @@ export default function Forms(props) {
                   variant="filled"
                 />
               </div>
-              <Button variant="contained" size="large">
+              <Button
+                variant="contained"
+                size="large"
+                style={{
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "IRANsans",
+                }}
+              >
                 {props.buttonTitle}
               </Button>
               <IconButton aria-label="fingerprint" color="success">
                 <Fingerprint />
               </IconButton>
+            </div>
+            <div className={styles.footerContainer}>
+              ما را در شبکه های اجتماعی دنبال کنید
+              <div className={styles.socialNetwork}>
+                <a href="https://www.instagram.com/">
+                  <img
+                    alt="Instagram"
+                    src={InstagramSVG}
+                    width="50"
+                    height="50"
+                  />
+                </a>
+                <a href="https://twitter.com/">
+                  <img alt="Twitter" src={TwitterSVG} width="50" height="50" />
+                </a>
+                <a href="https://www.YouTube.com/">
+                  <img alt="YouTube" src={YouTubeSVG} width="50" height="50" />
+                </a>
+                <a href="https://www.Facebook.com/">
+                  <img
+                    alt="Facebook"
+                    src={FacebookSVG}
+                    width="50"
+                    height="50"
+                  />
+                </a>
+                <a href="https://www.Linkedin.com/">
+                  <img
+                    alt="Linkedin"
+                    src={LinkedinSVG}
+                    width="50"
+                    height="50"
+                  />
+                </a>
+              </div>
             </div>
           </Box>
         </Modal>
