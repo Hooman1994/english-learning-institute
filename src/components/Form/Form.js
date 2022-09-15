@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import LoadingButton from "@mui/lab/LoadingButton";
@@ -13,6 +13,8 @@ import YouTubeSVG from "../../assets/images/youtube.svg";
 import LinkedinSVG from "../../assets/images/linkedin.svg";
 import TwitterSVG from "../../assets/images/twitter.svg";
 import InstagramSVG from "../../assets/images/instagram.svg";
+import Alert from "@mui/material/Alert";
+import AlertTitle from "@mui/material/AlertTitle";
 
 const style = {
   position: "absolute",
@@ -29,19 +31,24 @@ const style = {
 };
 
 export default function Forms(props) {
-  const [loading, setLoading] = React.useState(false);
+  const [alert, setAlert] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   function handleClickLogin() {
     setLoading(true);
-    alert("ورود با موفقیت انجام شد.");
+    setAlert(true);
   }
   function handleClickRegister() {
+    debugger;
     setLoading(true);
-    alert("ثبت نام با موفقیت انجام گردید.");
+    setAlert(true);
   }
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => {
+    debugger;
     setOpen(false);
+    setAlert(false);
     setLoading(false);
   };
 
@@ -58,10 +65,34 @@ export default function Forms(props) {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
+            {alert && (
+              <Alert
+                severity="success"
+                style={{
+                  position: "absolute",
+                  width: "95%",
+                  fontSize: "24px",
+                  fontFamily: "IRANsans",
+                  direction: "rtl",
+                }}
+              >
+                <AlertTitle
+                  style={{
+                    fontSize: "24px",
+                    fontFamily: "IRANsans",
+                    direction: "rtl",
+                  }}
+                >
+                  عملیات موفق
+                </AlertTitle>
+                عملیات <strong>ورود</strong> با موفقیت انجام شد
+              </Alert>
+            )}
+
             <div
               style={{
                 justifyContent: "center",
-                margin: "100px 30px 50px 100px",
+                margin: "130px 30px 50px 100px",
               }}
             >
               <h1>فرم ورود</h1>
@@ -167,10 +198,33 @@ export default function Forms(props) {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
+            {alert && (
+              <Alert
+                severity="success"
+                style={{
+                  position: "absolute",
+                  width: "95%",
+                  fontSize: "24px",
+                  fontFamily: "IRANsans",
+                  direction: "rtl",
+                }}
+              >
+                <AlertTitle
+                  style={{
+                    fontSize: "24px",
+                    fontFamily: "IRANsans",
+                    direction: "rtl",
+                  }}
+                >
+                  عملیات موفق
+                </AlertTitle>
+                عملیات <strong>ثبت نام</strong> با موفقیت انجام شد
+              </Alert>
+            )}
             <div
               style={{
                 justifyContent: "center",
-                margin: "100px 30px 50px 100px",
+                margin: "120px 30px 50px 100px",
               }}
             >
               <h1>فرم ثبت نام</h1>
@@ -215,7 +269,7 @@ export default function Forms(props) {
                   fontFamily: "IRANsans",
                 }}
                 color="success"
-                onClick={handleClickLogin}
+                onClick={handleClickRegister}
                 loading={loading}
                 loadingPosition="start"
                 startIcon={<SaveIcon />}
