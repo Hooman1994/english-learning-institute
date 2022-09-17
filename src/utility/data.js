@@ -18,11 +18,11 @@ import begginer from "../assets/images/introduction.png";
 import intermediate from "../assets/images/introduction.png";
 import advanced from "../assets/images/introduction.png";
 import tofel from "../assets/images/introduction.png";
-import amf0 from "../assets/images/amf0.webp";
+import amf0 from "../assets/images/amf0.png";
 import amf1 from "../assets/images/amf1.png";
 import amf2 from "../assets/images/amf2.png";
 import amf3 from "../assets/images/amf3.png";
-import amf4 from "../assets/images/amf4.jpg";
+import amf4 from "../assets/images/amf4.png";
 import amf5 from "../assets/images/amf5.png";
 import dictionary from "../assets/images/dictionary.png";
 import book504 from "../assets/images/504.png";
@@ -346,19 +346,10 @@ const shoppingItems = [
   },
   {
     id: "7",
-    body: "504 Essentials",
-    paragraph1: "",
-    image: book504,
-    name: "6",
-    alt: "tofel",
-    url: "/tofel",
-  },
-  {
-    id: "8",
     body: "Top Notch",
     paragraph1: "",
     image: topNotch,
-    name: "6",
+    name: "7",
     alt: "tofel",
     url: "/tofel",
   },

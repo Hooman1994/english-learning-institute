@@ -34,8 +34,8 @@ export default function ComplexCard(props) {
     <Card
       sx={{
         maxHeight: "900px",
-        minWidth: "300px",
-        margin: "50px",
+        minWidth: "320px",
+        margin: "50px 50px 100px 50px",
         textAlign: "right",
         boxShadow:
           "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
@@ -44,8 +44,8 @@ export default function ComplexCard(props) {
       <CardHeader title={props.title} subheader={props.date} />
       <CardMedia
         component="img"
-        height="200"
-        width="300"
+        height="250"
+        width="100"
         image={props.image}
         alt={props.alt}
       />
