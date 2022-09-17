@@ -13,6 +13,20 @@ import suggestion from "../assets/images/suggestion.png";
 import ttc from "../assets/images/ttc.png";
 import levelTest from "../assets/images/levelTest.png";
 import introduction from "../assets/images/introduction.png";
+import ielts from "../assets/images/introduction.png";
+import begginer from "../assets/images/introduction.png";
+import intermediate from "../assets/images/introduction.png";
+import advanced from "../assets/images/introduction.png";
+import tofel from "../assets/images/introduction.png";
+import amf0 from "../assets/images/amf0.webp";
+import amf1 from "../assets/images/amf1.png";
+import amf2 from "../assets/images/amf2.png";
+import amf3 from "../assets/images/amf3.png";
+import amf4 from "../assets/images/amf4.jpg";
+import amf5 from "../assets/images/amf5.png";
+import dictionary from "../assets/images/dictionary.png";
+import book504 from "../assets/images/504.png";
+import topNotch from "../assets/images/topNotch.jpg";
 
 const carouselData = [
   {
@@ -207,59 +221,147 @@ const menuItems = [
 const books = [
   {
     id: "1",
-    bodyOne: "شهریه کلاس ها و دوره ها",
-    bodyTwo: "اطلاع از نحوه پرداخت و جدول پرداخت شهریه زبان آموزان",
-    image: fee,
-    name: "1",
-    alt: "fee",
-    url: "/fee",
+    body: "TTC دوره های",
+    paragraph1: "TTC برگزاری دوره های تخصصی",
+    paragraph2: "اعطای مدرک معتبر و جذب اساتید",
+    image: ttc,
+    name: "ttcImage",
+    alt: "ttc-image",
+    url: "/ttc",
   },
   {
     id: "2",
-    bodyOne: "واحد های آموزشگاه",
-    bodyTwo: "آشنایی با واحد های آموزشی، کادر مجرب ما و مدیریت کلاس ها",
-    image: introduction,
-    name: "2",
-    alt: "introduction",
-    url: "/introduction",
+    body: "IELTS دوره های",
+    paragraph1: "",
+    paragraph2: "",
+    image: ielts,
+    name: "ieltsImage",
+    alt: "ielts-image",
+    url: "/ielts",
   },
   {
     id: "3",
-    bodyOne: "دوره های آموزشی",
-    bodyTwo: "آشنایی با ادوار اموزشی و کلاس ها و متد های آموزشی آموزشگاه",
-    image: online,
+    body: "Intermediate دوره های",
+    paragraph1: "",
+    paragraph2: "",
+    image: intermediate,
     name: "3",
-    alt: "online",
-    url: "/online",
+    alt: "intermediate",
+    url: "/intermediate",
   },
   {
     id: "4",
-    bodyOne: "تقویم آموزشی",
-    bodyTwo: "مشاهده تقویم برگزاری کلاس ها و دوره ها",
-    image: calendar,
+    body: "Begginer دوره های",
+    paragraph1: "",
+    paragraph2: "",
+    image: begginer,
     name: "4",
-    alt: "calendar",
-    url: "/calendar",
+    alt: "begginer",
+    url: "/begginer",
   },
   {
     id: "5",
-    bodyOne: "تعیین سطح",
-    bodyTwo: "برگزاری آزمون تعیین سطح با پیشرفته ترین متد ها",
-    image: levelTest,
+    body: "Advanced دوره های",
+    paragraph1: "",
+    paragraph2: "",
+    image: advanced,
     name: "5",
-    alt: "levelTest",
-    url: "/level-test",
+    alt: "advanced",
+    url: "/advanced",
   },
   {
     id: "6",
-    bodyOne: "خدمات آنلاین",
-    bodyTwo:
-      "آشنایی با خدمات آنلایناعم از کلاس های غیر حضوری، دوره های نیمه آفلاین و پشتیبانی زبان آموزان",
-    image: onlineServices,
+    body: "TOFEL دوره های",
+    paragraph1: "",
+    paragraph2: "",
+    image: tofel,
     name: "6",
-    alt: "onlineServices",
-    url: "/online-services",
+    alt: "tofel",
+    url: "/tofel",
+  },
+];
+const shoppingItems = [
+  {
+    id: "1",
+    body: "American English File starter",
+    paragraph1: "",
+    image: amf0,
+    name: "ttcImage",
+    alt: "ttc-image",
+    url: "/ttc",
+  },
+  {
+    id: "2",
+    body: "American English File 1",
+    paragraph1: "",
+    image: amf1,
+    name: "ieltsImage",
+    alt: "ielts-image",
+    url: "/ielts",
+  },
+  {
+    id: "3",
+    body: "American English File 2",
+    paragraph1: "",
+    image: amf2,
+    name: "3",
+    alt: "intermediate",
+    url: "/intermediate",
+  },
+  {
+    id: "4",
+    body: "American English File 3",
+    paragraph1: "",
+    image: amf3,
+    name: "4",
+    alt: "begginer",
+    url: "/begginer",
+  },
+  {
+    id: "5",
+    body: "American English File 4",
+    paragraph1: "",
+    image: amf4,
+    name: "5",
+    alt: "advanced",
+    url: "/advanced",
+  },
+  {
+    id: "6",
+    body: "American English File 5",
+    paragraph1: "",
+    image: amf5,
+    name: "6",
+    alt: "tofel",
+    url: "/tofel",
+  },
+  {
+    id: "6",
+    body: "Dictionary",
+    paragraph1: "",
+    image: dictionary,
+    name: "6",
+    alt: "tofel",
+    url: "/tofel",
+  },
+  {
+    id: "7",
+    body: "504 Essentials",
+    paragraph1: "",
+    image: book504,
+    name: "6",
+    alt: "tofel",
+    url: "/tofel",
+  },
+  {
+    id: "8",
+    body: "Top Notch",
+    paragraph1: "",
+    image: topNotch,
+    name: "6",
+    alt: "tofel",
+    url: "/tofel",
   },
 ];
 
-export { cardData, carouselData, menuItems, books };
+export { cardData, carouselData, menuItems, books, shoppingItems };
