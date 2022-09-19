@@ -14,7 +14,6 @@ function OnlineServices() {
     >
       {onlineOptions &&
         onlineOptions.map((item, index) => {
-          debugger;
           return (
             <div>
               <ComplexCard

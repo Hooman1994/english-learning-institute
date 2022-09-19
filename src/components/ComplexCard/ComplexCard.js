@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
@@ -24,11 +24,21 @@ const ExpandMore = styled((props) => {
 }));
 
 export default function ComplexCard(props) {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const [items, setItems] = useState([]);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
+  function handleAddToCart(e) {
+    debugger;
+    let newItem =[...items]
+    newItem.push(e);
+    setItems(newItem);
+    console.log(items);
+    props.getItems(items);
+  }
 
   return (
     <Card
@@ -56,7 +66,7 @@ export default function ComplexCard(props) {
           <Typography
             variant="body2"
             color="text.secondary"
-            style={{ fontFamily: "IRANsans", fontWeight: "bold"}}
+            style={{ fontFamily: "IRANsans", fontWeight: "bold" }}
           >
             {props.body}
           </Typography>
@@ -70,7 +80,7 @@ export default function ComplexCard(props) {
         )}
         {props.shoppingIcons && (
           <IconButton aria-label="buy">
-            <ShoppingCartIcon />
+            <ShoppingCartIcon onClick={(e) => handleAddToCart(props.item)} />
           </IconButton>
         )}
         <ExpandMore
