@@ -57,6 +57,34 @@ const carouselData = [
 
 const cardData = [
   {
+    id: "6",
+    bodyOne: "خدمات آنلاین",
+    bodyTwo:
+      "آشنایی با خدمات آنلایناعم از کلاس های غیر حضوری، دوره های نیمه آفلاین و پشتیبانی زبان آموزان",
+    image: onlineServices,
+    name: "6",
+    alt: "onlineServices",
+    url: "/online-services",
+  },
+  {
+    id: "7",
+    bodyOne: "فروشگاه کتاب ما",
+    bodyTwo: "معرفی کتاب های مورد تائید آموزشگاه و خرید کتاب های کمک آموزشی",
+    image: store,
+    name: "7",
+    alt: "store",
+    url: "/store",
+  },
+  {
+    id: "4",
+    bodyOne: "تقویم آموزشی",
+    bodyTwo: "مشاهده تقویم برگزاری کلاس ها و دوره ها",
+    image: calendar,
+    name: "4",
+    alt: "calendar",
+    url: "/calendar",
+  },
+  {
     id: "1",
     bodyOne: "شهریه کلاس ها و دوره ها",
     bodyTwo: "اطلاع از نحوه پرداخت و جدول پرداخت شهریه زبان آموزان",
@@ -83,15 +111,7 @@ const cardData = [
     alt: "online",
     url: "/online",
   },
-  {
-    id: "4",
-    bodyOne: "تقویم آموزشی",
-    bodyTwo: "مشاهده تقویم برگزاری کلاس ها و دوره ها",
-    image: calendar,
-    name: "4",
-    alt: "calendar",
-    url: "/calendar",
-  },
+
   {
     id: "5",
     bodyOne: "تعیین سطح",
@@ -101,25 +121,7 @@ const cardData = [
     alt: "levelTest",
     url: "/level-test",
   },
-  {
-    id: "6",
-    bodyOne: "خدمات آنلاین",
-    bodyTwo:
-      "آشنایی با خدمات آنلایناعم از کلاس های غیر حضوری، دوره های نیمه آفلاین و پشتیبانی زبان آموزان",
-    image: onlineServices,
-    name: "6",
-    alt: "onlineServices",
-    url: "/online-services",
-  },
-  {
-    id: "7",
-    bodyOne: "فروشگاه کتاب ما",
-    bodyTwo: "معرفی کتاب های مورد تائید آموزشگاه و خرید کتاب های کمک آموزشی",
-    image: store,
-    name: "7",
-    alt: "store",
-    url: "/store",
-  },
+
   {
     id: "8",
     bodyOne: "دوره های TTC و جذب اساتید",
@@ -268,16 +270,6 @@ const books = [
     name: "5",
     alt: "advanced",
     url: "/advanced",
-  },
-  {
-    id: "6",
-    body: "TOFEL دوره های",
-    paragraph1: "",
-    paragraph2: "",
-    image: tofel,
-    name: "6",
-    alt: "tofel",
-    url: "/tofel",
   },
 ];
 const shoppingItems = [
