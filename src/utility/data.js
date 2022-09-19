@@ -17,7 +17,6 @@ import ielts from "../assets/images/introduction.png";
 import begginer from "../assets/images/introduction.png";
 import intermediate from "../assets/images/introduction.png";
 import advanced from "../assets/images/introduction.png";
-import tofel from "../assets/images/introduction.png";
 import amf0 from "../assets/images/amf0.png";
 import amf1 from "../assets/images/amf1.png";
 import amf2 from "../assets/images/amf2.png";
@@ -25,8 +24,13 @@ import amf3 from "../assets/images/amf3.png";
 import amf4 from "../assets/images/amf4.png";
 import amf5 from "../assets/images/amf5.png";
 import dictionary from "../assets/images/dictionary.png";
-import book504 from "../assets/images/504.png";
 import topNotch from "../assets/images/topNotch.jpg";
+import level1 from "../assets/images/level1.jpg";
+import level2 from "../assets/images/level2.jpg";
+import level3 from "../assets/images/level3.jpg";
+import level4 from "../assets/images/level4.jpg";
+import level5 from "../assets/images/level5.jpg";
+import level6 from "../assets/images/level6.jpg";
 
 const carouselData = [
   {
@@ -57,15 +61,15 @@ const carouselData = [
 
 const cardData = [
   {
-    id: "6",
-    bodyOne: "خدمات آنلاین",
-    bodyTwo:
-      "آشنایی با خدمات آنلایناعم از کلاس های غیر حضوری، دوره های نیمه آفلاین و پشتیبانی زبان آموزان",
-    image: onlineServices,
-    name: "6",
-    alt: "onlineServices",
-    url: "/online-services",
+    id: "3",
+    bodyOne: "دوره های آموزشی",
+    bodyTwo: "آشنایی با ادوار اموزشی و کلاس ها و متد های آموزشی آموزشگاه",
+    image: online,
+    name: "3",
+    alt: "online",
+    url: "/courses",
   },
+
   {
     id: "7",
     bodyOne: "فروشگاه کتاب ما",
@@ -85,6 +89,16 @@ const cardData = [
     url: "/calendar",
   },
   {
+    id: "6",
+    bodyOne: "خدمات آنلاین",
+    bodyTwo:
+      "آشنایی با خدمات آنلایناعم از کلاس های غیر حضوری، دوره های نیمه آفلاین و پشتیبانی زبان آموزان",
+    image: onlineServices,
+    name: "6",
+    alt: "onlineServices",
+    url: "/online-services",
+  },
+  {
     id: "1",
     bodyOne: "شهریه کلاس ها و دوره ها",
     bodyTwo: "اطلاع از نحوه پرداخت و جدول پرداخت شهریه زبان آموزان",
@@ -101,15 +115,6 @@ const cardData = [
     name: "2",
     alt: "introduction",
     url: "/introduction",
-  },
-  {
-    id: "3",
-    bodyOne: "دوره های آموزشی",
-    bodyTwo: "آشنایی با ادوار اموزشی و کلاس ها و متد های آموزشی آموزشگاه",
-    image: online,
-    name: "3",
-    alt: "online",
-    url: "/online",
   },
 
   {
@@ -219,24 +224,21 @@ const menuItems = [
     ],
   },
 ];
-
-const books = [
+const levels = [
   {
     id: "1",
-    body: "TTC دوره های",
-    paragraph1: "TTC برگزاری دوره های تخصصی",
-    paragraph2: "اعطای مدرک معتبر و جذب اساتید",
-    image: ttc,
+    body: "Beginner/Elementary دوره های",
+    paragraph: "TTC برگزاری دوره های تخصصی",
+    image: level1,
     name: "ttcImage",
     alt: "ttc-image",
     url: "/ttc",
   },
   {
     id: "2",
-    body: "IELTS دوره های",
-    paragraph1: "",
-    paragraph2: "",
-    image: ielts,
+    body: "Pre Intermediate دوره های",
+    paragraph: "",
+    image: level2,
     name: "ieltsImage",
     alt: "ielts-image",
     url: "/ielts",
@@ -244,19 +246,17 @@ const books = [
   {
     id: "3",
     body: "Intermediate دوره های",
-    paragraph1: "",
-    paragraph2: "",
-    image: intermediate,
+    paragraph: "",
+    image: level3,
     name: "3",
     alt: "intermediate",
     url: "/intermediate",
   },
   {
     id: "4",
-    body: "Begginer دوره های",
-    paragraph1: "",
-    paragraph2: "",
-    image: begginer,
+    body: "Upper Intermediate دوره های",
+    paragraph: "",
+    image: level4,
     name: "4",
     alt: "begginer",
     url: "/begginer",
@@ -264,19 +264,65 @@ const books = [
   {
     id: "5",
     body: "Advanced دوره های",
-    paragraph1: "",
-    paragraph2: "",
-    image: advanced,
+    paragraph: "",
+    image: level5,
     name: "5",
     alt: "advanced",
     url: "/advanced",
+  },
+  {
+    id: "6",
+    body: "Proficient دوره های",
+    paragraph: "",
+    image: level6,
+    name: "5",
+    alt: "advanced",
+    url: "/advanced",
+  },
+];
+const onlineOptions = [
+  {
+    id: "1",
+    body: "مشاوره آنلاین و رایگان",
+    paragraph:
+      "جلسه مشاوره آنلاین با کادر مجرب مجموعه جهت تعیین سطح دقیق و ارزیابی مهارت ها",
+    image: ttc,
+    name: "ttcImage",
+    alt: "ttc-image",
+  },
+  {
+    id: "2",
+    body: "مشاوره آزمون های معتبر",
+    paragraph:
+      "جلسه مشاوره با اساتید مجموعه جهت اقدام برای شرکت در آزمون های معتبر بین المللی",
+    image: ielts,
+    name: "ieltsImage",
+    alt: "ielts-image",
+  },
+  {
+    id: "3",
+    body: "برگزاری آزمون های آزمایشی",
+    paragraph:
+      "برگزاری آزمون های معتبر آزمایشی جهت آماده سازی داوطلبان برای شرکت در آزمون",
+    image: intermediate,
+    name: "3",
+    alt: "intermediate",
+  },
+  {
+    id: "4",
+    body: "کلاس های مکالمه",
+    paragraph:
+      "کلاس های مکالمه آزاد برای سطوح پیشرفته با به کارگیری جدید ترین متد های روز",
+    image: begginer,
+    name: "4",
+    alt: "begginer",
   },
 ];
 const shoppingItems = [
   {
     id: "1",
     body: "American English File starter",
-    paragraph1: "",
+    paragraph: "",
     image: amf0,
     name: "ttcImage",
     alt: "ttc-image",
@@ -285,7 +331,7 @@ const shoppingItems = [
   {
     id: "2",
     body: "American English File 1",
-    paragraph1: "",
+    paragraph: "",
     image: amf1,
     name: "ieltsImage",
     alt: "ielts-image",
@@ -294,7 +340,7 @@ const shoppingItems = [
   {
     id: "3",
     body: "American English File 2",
-    paragraph1: "",
+    paragraph: "",
     image: amf2,
     name: "3",
     alt: "intermediate",
@@ -303,7 +349,7 @@ const shoppingItems = [
   {
     id: "4",
     body: "American English File 3",
-    paragraph1: "",
+    paragraph: "",
     image: amf3,
     name: "4",
     alt: "begginer",
@@ -312,7 +358,7 @@ const shoppingItems = [
   {
     id: "5",
     body: "American English File 4",
-    paragraph1: "",
+    paragraph: "",
     image: amf4,
     name: "5",
     alt: "advanced",
@@ -321,7 +367,7 @@ const shoppingItems = [
   {
     id: "6",
     body: "American English File 5",
-    paragraph1: "",
+    paragraph: "",
     image: amf5,
     name: "6",
     alt: "tofel",
@@ -330,7 +376,7 @@ const shoppingItems = [
   {
     id: "6",
     body: "Dictionary",
-    paragraph1: "",
+    paragraph: "",
     image: dictionary,
     name: "6",
     alt: "tofel",
@@ -339,7 +385,7 @@ const shoppingItems = [
   {
     id: "7",
     body: "Top Notch",
-    paragraph1: "",
+    paragraph: "",
     image: topNotch,
     name: "7",
     alt: "tofel",
@@ -347,4 +393,11 @@ const shoppingItems = [
   },
 ];
 
-export { cardData, carouselData, menuItems, books, shoppingItems };
+export {
+  cardData,
+  carouselData,
+  menuItems,
+  onlineOptions,
+  shoppingItems,
+  levels,
+};

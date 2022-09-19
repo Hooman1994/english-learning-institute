@@ -1,8 +1,8 @@
 import React from "react";
 import ComplexCard from "../../components/ComplexCard/ComplexCard";
-import { shoppingItems } from "../../utility/data";
+import { levels } from "../../utility/data";
 
-function Store() {
+function Courses() {
   return (
     <div
       style={{
@@ -12,14 +12,13 @@ function Store() {
         justifyContent: "space-evenly",
       }}
     >
-      {shoppingItems &&
-        shoppingItems.map((item, index) => {
-          debugger;
+      {levels &&
+        levels.map((item, index) => {
           return (
             <div>
               <ComplexCard
-                shoppingIcons={true}
-                favoriteIcons={true}
+                imageStyle={{width: "150px" , marginLeft: "22%"}}
+                bodyStyle={{width: "280px"}}
                 body={item.body}
                 image={item.image}
                 paragraph={item.paragraph}
@@ -30,5 +29,4 @@ function Store() {
     </div>
   );
 }
-
-export default Store;
+export default Courses;

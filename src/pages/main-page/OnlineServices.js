@@ -1,7 +1,6 @@
 import React from "react";
-import Container from "@mui/material/Container";
 import ComplexCard from "../../components/ComplexCard/ComplexCard";
-import { books } from "../../utility/data";
+import { onlineOptions } from "../../utility/data";
 
 function OnlineServices() {
   return (
@@ -13,16 +12,16 @@ function OnlineServices() {
         justifyContent: "space-evenly",
       }}
     >
-      {books &&
-        books.map((item, index) => {
+      {onlineOptions &&
+        onlineOptions.map((item, index) => {
           debugger;
           return (
             <div>
               <ComplexCard
+                paragraphStyle={{ width: "250px", direction: "rtl"}}
                 body={item.body}
                 image={item.image}
-                paragraph1={item.paragraph1}
-                paragraph2={item.paragraph2}
+                paragraph={item.paragraph}
               />
             </div>
           );

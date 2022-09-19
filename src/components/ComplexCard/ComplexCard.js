@@ -34,7 +34,7 @@ export default function ComplexCard(props) {
     <Card
       sx={{
         maxHeight: "900px",
-        minWidth: "320px",
+        minWidth: "100px",
         margin: "50px 50px 100px 50px",
         textAlign: "right",
         boxShadow:
@@ -42,29 +42,33 @@ export default function ComplexCard(props) {
       }}
     >
       <CardHeader title={props.title} subheader={props.date} />
-      <CardMedia
-        component="img"
-        height="250"
-        width="100"
-        image={props.image}
-        alt={props.alt}
-      />
-      <CardContent>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          style={{ fontFamily: "IRANsans" }}
-        >
-          {props.body}
-        </Typography>
-      </CardContent>
+      <div style={props.imageStyle}>
+        <CardMedia
+          component="img"
+          height="300"
+          width="50"
+          image={props.image}
+          alt={props.alt}
+        />
+      </div>
+      <div style={props.bodyStyle}>
+        <CardContent>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            style={{ fontFamily: "IRANsans", fontWeight: "bold"}}
+          >
+            {props.body}
+          </Typography>
+        </CardContent>
+      </div>
       <CardActions disableSpacing>
         {props.favoriteIcons && (
           <IconButton aria-label="add to favorites">
             <FavoriteIcon />
           </IconButton>
         )}
-        {props.shoppingIcons   && (
+        {props.shoppingIcons && (
           <IconButton aria-label="buy">
             <ShoppingCartIcon />
           </IconButton>
@@ -80,18 +84,24 @@ export default function ComplexCard(props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography style={{ fontFamily: "IRANsans" }} paragraph>
-            :توضیحات
-          </Typography>
           <Typography
-            style={{ fontFamily: "IRANsans", fontWeight: "bold" }}
+            style={{
+              fontFamily: "IRANsans",
+              fontSize: "18px",
+              fontWeight: "bold",
+            }}
             paragraph
           >
-            {props.paragraph1}
+            :توضیحات
           </Typography>
-          <Typography style={{ fontFamily: "IRANsans" }}>
-            {props.paragraph2}
-          </Typography>
+          <div style={props.paragraphStyle}>
+            <Typography
+              style={{ fontFamily: "IRANsans", fontSize: "16px" }}
+              paragraph
+            >
+              {props.paragraph}
+            </Typography>
+          </div>
         </CardContent>
       </Collapse>
     </Card>
