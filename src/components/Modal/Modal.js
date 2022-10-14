@@ -22,9 +22,10 @@ const Demo = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
 }));
 
-export default function Modal() {
+export default function Modal(props) {
   const [secondary, setSecondary] = React.useState(false);
   const [open, setOpen] = useState(false);
+  const items = props.data;
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -34,11 +35,26 @@ export default function Modal() {
     setOpen(false);
   };
 
+  function handleDelete(item) {
+    debugger;
+    // let _items = [...items];
+    // let index = _items.findIndex(item.id);
+    alert(item.id + "deleted");
+  }
+
   return (
     <React.Fragment>
       <IconButton>
         <ShoppingCartIcon
-          sx={{ color: "white" ,padding: "15px" , width:"70px" , height: "70px" , position: "absolute" , left:"330px" , top: "-580%"}}
+          sx={{
+            color: "white",
+            padding: "15px",
+            width: "70px",
+            height: "70px",
+            position: "absolute",
+            left: "330px",
+            top: "-580%",
+          }}
           onClick={handleClickOpen}
         />
       </IconButton>
@@ -50,24 +66,36 @@ export default function Modal() {
               لیست آیتم ها
             </Typography>
             <List>
-              <ListItem
-                secondaryAction={
-                  <IconButton edge="end" aria-label="delete">
-                    <DeleteIcon />
-                  </IconButton>
-                }
-              >
-                <ListItemAvatar>
-                  <img
-                    src={Image}
-                    style={{ width: "40px", height: "40px" }}
-                  ></img>
-                </ListItemAvatar>
-                <ListItemText
-                  primary="Single-line item"
-                  secondary={secondary ? "Secondary text" : null}
-                />
-              </ListItem>
+              {items &&
+                items.map((item, index) => {
+                  return (
+                    <div key={item.id}>
+                      <ListItem
+                        secondaryAction={
+                          <IconButton edge="end" aria-label="delete">
+                            <DeleteIcon
+                              onClick={() => {
+                                handleDelete(item);
+                              }}
+                            />
+                          </IconButton>
+                        }
+                      >
+                        <ListItemAvatar>
+                          <img
+                            src={item.image}
+                            style={{ width: "40px", height: "40px" }}
+                            alt={item.alt}
+                          ></img>
+                        </ListItemAvatar>
+                        <ListItemText
+                          primary={item.body}
+                          secondary={item.paragraph}
+                        />
+                      </ListItem>
+                    </div>
+                  );
+                })}
             </List>
           </Grid>
           <Box

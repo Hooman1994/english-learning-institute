@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
@@ -33,11 +33,7 @@ export default function ComplexCard(props) {
 
   function handleAddToCart(e) {
     debugger;
-    let newItem =[...items]
-    newItem.push(e);
-    setItems(newItem);
-    console.log(items);
-    props.getItems(items);
+    props.addToCard(e);
   }
 
   return (

@@ -322,7 +322,7 @@ const shoppingItems = [
   {
     id: "1",
     body: "American English File starter",
-    paragraph: "",
+    paragraph: "کتاب استارتر برای گروه سنی کودکان با سطح مقدماتی",
     image: amf0,
     name: "ttcImage",
     alt: "ttc-image",
@@ -331,7 +331,7 @@ const shoppingItems = [
   {
     id: "2",
     body: "American English File 1",
-    paragraph: "",
+    paragraph: "کتاب اول برای گروه سنی نوجوانان با سطح پایه و مقدماتی",
     image: amf1,
     name: "ieltsImage",
     alt: "ielts-image",
@@ -340,7 +340,7 @@ const shoppingItems = [
   {
     id: "3",
     body: "American English File 2",
-    paragraph: "",
+    paragraph: "کتاب دوم برای گروه سنی نوجوانان با سطح پایه و متوسط",
     image: amf2,
     name: "3",
     alt: "intermediate",
@@ -349,7 +349,8 @@ const shoppingItems = [
   {
     id: "4",
     body: "American English File 3",
-    paragraph: "",
+    paragraph:
+      "کتاب چهارم برای گروه سنی نوجوانان و جوانان با سطح متوسط و پیشرفته",
     image: amf3,
     name: "4",
     alt: "begginer",
@@ -358,7 +359,7 @@ const shoppingItems = [
   {
     id: "5",
     body: "American English File 4",
-    paragraph: "",
+    paragraph: "کتاب پنجم برای گروه سنی نوجوانان و جوانان با سطح پیشرفته",
     image: amf4,
     name: "5",
     alt: "advanced",
@@ -367,7 +368,8 @@ const shoppingItems = [
   {
     id: "6",
     body: "American English File 5",
-    paragraph: "",
+    paragraph:
+      "کتاب ششم برای گروه سنی جوانان و بزرگسالان با سطح پیشرفته و فراپیشرفته",
     image: amf5,
     name: "6",
     alt: "tofel",
@@ -376,7 +378,7 @@ const shoppingItems = [
   {
     id: "6",
     body: "Dictionary",
-    paragraph: "",
+    paragraph: "کتاب Dictionary برای آموزش لغات و کاربرد آن ها",
     image: dictionary,
     name: "6",
     alt: "tofel",
@@ -385,7 +387,8 @@ const shoppingItems = [
   {
     id: "7",
     body: "Top Notch",
-    paragraph: "",
+    paragraph:
+      "مجموعه کتاب Top Notch برای پیشرفت سطح مکالمه و گرامر های روزمره و عامیانه",
     image: topNotch,
     name: "7",
     alt: "tofel",

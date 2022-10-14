@@ -5,13 +5,19 @@ import Modal from "../../components/Modal/Modal";
 
 function Store() {
   const [data, setData] = useState();
+  const [items, setItems] = useState([]);
   const getItems = (items) => {
     setData(items);
   };
+  function handleBuy(data) {
+    let newItem = [...items];
+    newItem.push(data);
+    setItems(newItem);
+  }
 
   return (
     <>
-      <Modal modalStyle={{ width: "1000px", height: "500px" }} />
+      <Modal modalStyle={{ width: "1000px", height: "500px" }} data={items} />
       <div
         style={{
           display: "flex",
@@ -23,7 +29,7 @@ function Store() {
         {shoppingItems &&
           shoppingItems.map((item, index) => {
             return (
-              <div>
+              <div key={index}>
                 <ComplexCard
                   item={item}
                   getItems={getItems}
@@ -32,6 +38,7 @@ function Store() {
                   body={item.body}
                   image={item.image}
                   paragraph={item.paragraph}
+                  addToCard={handleBuy}
                 />
               </div>
             );
